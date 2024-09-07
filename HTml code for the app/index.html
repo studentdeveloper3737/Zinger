@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zing</title>
+    <style>
+        /* Adding some basic styles for clarity */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center; /* Center-aligns text and inline elements */
+            background-color: #f4f4f4; /* Light background for better readability */
+        }
+        img {
+            display: block;
+            margin: 0 auto; /* Centers the image horizontally */
+        }
+        h1 {
+            margin: 20px 0;
+            color: #333; /* Dark text color for better contrast */
+        }
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 400px; /* Constrains the section width */
+        }
+        h2 {
+            margin: 10px 0;
+            color: #555; /* Slightly lighter text color */
+        }
+        .lists {
+            margin: 20px auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        input[type="email"] {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #8b5; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #6a4; /* Darker button color on hover */
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #8b5; /* Link color */
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" width="200" height="200" alt="Zing logo">
+    <h1>Zing</h1>
+    <section>
+        <h2><strong>Become a Zinger</strong></h2>
+        <div class="lists">
+            <form id="zing-form">
+                <input id="postal-code" type="email" placeholder="Enter your email address" name="postal-code" required><br><br>
+                <button type="button" onclick="handleSubmit()">Submit</button>
+            </form>
+        </div>
+        <p><u>Ride within city</u></p>
+    </section>
+    <a href="recipie.html">Zing Now</a>
+
+    <script>
+        function handleSubmit() {
+            // Focus on the email input field
+            document.getElementById('postal-code').focus();
+            // Redirects to the page specified in the Zing Now link
+            window.location.href = 'recipie.html';
+        }
+    </script>
+</body>
+</html>
