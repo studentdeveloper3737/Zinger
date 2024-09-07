@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Center-aligns text and inline elements */
+            background-color: #f4f4f4;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            margin: 20px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px; /* Center-aligns and constrains width */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3, h4 {
+            margin: 10px 0;
+        }
+
+        .map-responsive {
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            position: relative;
+            height: 0;
+            margin: 20px 0;
+        }
+
+        .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        ul, ol {
+            text-align: left; /* Aligns list items to the left */
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        /* Additional styling for buttons if needed */
+        button {
+            background-color: #05c5cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #05c5cc;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Home</a>
+
+    <section>
+        <h2>Are You a Student?</h2>
+        <h3>Sign Up Now</h3>
+        <p>Where to:</p>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11666.132817676926!2d-87.9432826!3d43.0302116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1725634734939!5m2!1sen!2sus" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" 
+                    aria-label="Google Maps showing location">
+            </iframe>
+        </div>
+        <ul>
+            <li>Book A Ride</li>
+            <li>Join Us</li>
+        </ul>
+        
+        <h4>Got a Car? Want to Pool with Friends?</h4>
+        <ol>
+            <li>Upload Student ID</li>
+            <li>Valid State License</li>
+            <li>Valid State Address Proof</li>
+            <li>Wait for One Day Approval</li>
+            <li>Enjoy Traveling</li>
+        </ol>
+        <button>Submit</button>
+    </section>
+</body>
+</html>

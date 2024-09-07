@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    background-color: #FFA500; /* Orange background color */
+    color: #333; /* Dark text color for contrast */
+    font-family: sans-serif;
+}
+
+.registration form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0;
+}
+
+.registration form h1 {
+    margin-bottom: 20px; /* Adds spacing below the heading */
+}
+
+.registration form p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.registration form input {
+    font-size: 16px;
+    padding: 15px;
+    width: 100%; /* Full width of the parent */
+    border: 2px solid black; /* Black border for input fields */
+    border-radius: 5px;
+    background-color: #fff; /* White background for input fields */
+    outline: none;
+}
+
+.registration form button {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%; /* Half width of the parent */
+    border: 2px solid black; /*
